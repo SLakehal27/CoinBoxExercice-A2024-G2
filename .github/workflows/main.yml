@@ -18,5 +18,5 @@ jobs:
       - name: Run tests
         run: cd src; python -m unittest; 
       - name: Create coverage report
-        run: =coverage run --source=src -m unittest; coverage html
+        run: coverage run --source=src -m unittest; coverage html
     
