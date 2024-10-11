@@ -15,5 +15,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - run: python -m pip install --upgrade pip setuptools wheel
       - run : pip install -r requirements.txt
-      - run: cd src; python -m unittest; coverage html; coverage run -m unittest
+      - run: cd src; python -m unittest; 
+      - run: cd src; coverage html; coverage run --source=src -m pytest
+      - run: coverage report
     
