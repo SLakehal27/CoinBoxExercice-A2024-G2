@@ -10,5 +10,7 @@ jobs:
     steps:
       - run: python -m pip install --upgrade pip setuptools wheel
       - run: pip --version
+      - run: git clone https://github.com/SLakehal27/CoinBoxExercice-A2024-G2
+      - run: cd CoinBoxExercice-A2024-G2
       - run : pip install -r requirements.txt
       - run : python -m unittest
