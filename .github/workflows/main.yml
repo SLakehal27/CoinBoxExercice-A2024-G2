@@ -2,8 +2,11 @@ name: LOG3430 - Github Action
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
- Explore-GitHub-Actions:
-    runs-on: alpine
+ test:
+    runs-on: ubuntu-latest
+    strategy: 
+     matrix: 
+      python-version : ["pypy3.7", "3.7"]
     steps:
       - run : pip install -r requirements.txt
       - run : python -m unittest
