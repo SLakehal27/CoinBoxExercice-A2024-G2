@@ -1,0 +1,9 @@
+name: LOG3430 - Github Action
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+jobs:
+ Explore-GitHub-Actions:
+    runs-on: alpine
+    steps:
+      - run : pip install -r requirements.txt
+      - run : python -m unittest
