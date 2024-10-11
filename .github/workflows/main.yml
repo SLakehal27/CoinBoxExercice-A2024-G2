@@ -12,5 +12,6 @@ jobs:
       - run: pip --version
       - run: git clone https://github.com/SLakehal27/CoinBoxExercice-A2024-G2
       - run: cd CoinBoxExercice-A2024-G2
+      - run: ls
       - run : pip install -r requirements.txt
       - run : python -m unittest
